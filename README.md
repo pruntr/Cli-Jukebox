@@ -1,4 +1,4 @@
-# Cli-Jukebox
+# Cli-Jukebox (for Windows)
 
 <!-- GETTING STARTED -->
 ## Getting Started
