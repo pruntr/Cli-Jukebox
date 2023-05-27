@@ -21,7 +21,7 @@ To get a local copy up and running follow these simple steps.
 
 <!-- CONTACT -->
 ## Contact
-- [Pragati Arora](pragatiarora314@gmail.com)
-- [Rohan Singla](rohansingla2003@gmail.com)
+- [Pragati Arora](mailto:pragatiarora314@gmail.com)
+- [Rohan Singla](mailto:rohansingla2003@gmail.com)
 
 Project Link: [https://github.com/pruntr/Cli-Jukebox](https://github.com/pruntr/Cli-Jukebox)
