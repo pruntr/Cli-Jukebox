@@ -11,10 +11,8 @@ To get a local copy up and running follow these simple steps.
    ```sh
    git clone https://github.com/pruntr/Cli-Jukebox
    ```
-2. Install NPM packages
-   ```sh
-   double click on instaal.bat
-   ```
+2. Install required packages
+   double click on install.bat
 
 ## Usage
 
