@@ -11,7 +11,10 @@ To get a local copy up and running follow these simple steps.
    ```sh
    git clone https://github.com/pruntr/Cli-Jukebox.git
    ```
-2. Install required packages by running install.bat
+2. Install required packages by running install.bat in the cloned directory as:
+   ```sh
+   .\install.bat
+   ```
 
 ## Usage
 

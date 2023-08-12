@@ -19,8 +19,9 @@ class Player:
         self.driver.minimize_window()
         self.driver.get("https://youtube.com")
         self.url = "https://youtube.com"
+        #these are for future hoped changes
         self.has_playlist = False
-        self.has_cookies = self.check_credentials()
+        # self.has_cookies = self.check_credentials()
         # Close loaded extension tab
         if(len(self.driver.window_handles) > 1):
             self.driver.switch_to.window(self.driver.window_handles[0])
