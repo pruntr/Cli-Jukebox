@@ -21,6 +21,11 @@ To get a local copy up and running follow these simple steps.
 1. Open a terminal anywhere and enter the following input
 ```play -s "song-name"```
 
+## NOTE:
+   Currently the chrome instance for youtube runs in the foreground. 
+   To change it to background go to ChromeDriver.py and uncomment *line 17*
+   You need to remove/comment *line 22* (the one with adblocker) as well
+
 <!-- CONTACT -->
 ## Contact
 - [Pragati Arora](mailto:pragatiarora314@gmail.com)
