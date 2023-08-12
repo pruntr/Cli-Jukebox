@@ -21,7 +21,7 @@ To get a local copy up and running follow these simple steps.
 1. Open a terminal anywhere and enter the following input
 ```play -s "song-name"```
 
-## NOTE:
+## Note
    Currently the chrome instance for youtube runs in the foreground. <br>
    To change it to background, we'd have to remove adblocker as following: <br> 
 1. You need to remove/comment ```line 22``` (the one with adblocker).<br>
