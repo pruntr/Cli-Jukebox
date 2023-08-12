@@ -22,9 +22,10 @@ To get a local copy up and running follow these simple steps.
 ```play -s "song-name"```
 
 ## NOTE:
-   Currently the chrome instance for youtube runs in the foreground, we'd have to remove adblocker. <br>
-   To change it to background go to ChromeDriver.py and uncomment *line 17* <br>
-   You need to remove/comment *line 22* (the one with adblocker) as well <br>
+   Currently the chrome instance for youtube runs in the foreground. <br>
+   To change it to background, we'd have to remove adblocker. <br> 
+   You need to remove/comment ```line 22``` (the one with adblocker).<br>
+   Now Go to ChromeDriver.py and uncomment ```line 17```. <br>
 
 <!-- CONTACT -->
 ## Contact
