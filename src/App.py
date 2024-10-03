@@ -31,7 +31,7 @@ def search_animation():
 			sys.stdout.flush()
 			return
 		print(Fore.LIGHTCYAN_EX +  '\rSearching ' + _, end='\r'+ Fore.RESET)
-		sleep(0.1)
+		sleep(1)
 
 
 def display_info():
@@ -69,7 +69,7 @@ def display_info():
 			print((Fore.LIGHTCYAN_EX + f'Now Playing: {Fore.WHITE + title + Fore.RESET}\n\n'+ Fore.RESET) + (Fore.LIGHTCYAN_EX + f'Playlist:\n{Fore.WHITE + playlist + Fore.RESET}\n\n'+ Fore.RESET) + (Fore.LIGHTCYAN_EX + f'Controls:\n{Fore.WHITE + controls + Fore.RESET}\r' + Fore.RESET))
 
 			new_title = title
-			sleep(0.1)
+			sleep(1)
 
 
 def parse_args():
@@ -157,5 +157,5 @@ def application(args):
 if __name__ == "__main__":
 
 	arguments = parse_args()
-
+	# print(arguments)
 	application(arguments)

@@ -2,8 +2,10 @@ from ChromeDriver import create_driver
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.by import By
 import os
 import pickle
+from time import sleep
 import sys
 # TODO:
 
@@ -44,8 +46,8 @@ class Player:
         driver.maximize_window()
         driver.minimize_window()
         driver.get(self.url)
-        driver.find_element_by_id("search-icon-legacy").click()
-        driver.find_element_by_class_name("style-scope ytd-video-renderer").click()
+        driver.find_element(By.ID, "search-icon-legacy").click()
+        driver.find_element(By.CLASS_NAME, "style-scope ytd-video-renderer").click()
         self.has_playlist = self.lookup_playlist()
         return True
 
@@ -55,7 +57,7 @@ class Player:
         :return (str): Current song title
         """
 
-        info = self.driver.find_element_by_xpath(r'//*[@id="container"]/h1/yt-formatted-string').text
+        info = self.driver.find_element(By.XPATH, r'//*[@id="container"]/h1/yt-formatted-string').text
         return info
 
     def lookup_playlist(self):
@@ -64,7 +66,7 @@ class Player:
         :return:
         """
         try:
-            self.driver.find_element_by_class_name("style-scope ytd-compact-radio-renderer").click()
+            self.driver.find_element(By.CLASS_NAME, "style-scope ytd-compact-radio-renderer").click()
             return True
         except NoSuchElementException:
             return False
@@ -80,11 +82,11 @@ class Player:
 
         next5 = {}
         for i in range(2,7):
-            link = self.driver.find_element_by_xpath(
+            link = self.driver.find_element(By.XPATH,
                 r'/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[4]/div['
                 r'2]/div/ytd-playlist-panel-renderer/div/div[2]/ytd-playlist-panel-video-renderer['
                 + str(i) + r']/a').get_attribute('href')
-            title = self.driver.find_element_by_xpath(
+            title = self.driver.find_element(By.XPATH,
                 r'/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[4]/div['
                 r'2]/div/ytd-playlist-panel-renderer/div/div[2]/ytd-playlist-panel-video-renderer['
                 + str(i) + r']/a/div/div[2]/h4/span').text
